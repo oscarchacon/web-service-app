@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/hola', function () {
     return view('welcome');
 });
+
+Route::get('/controller/{param?}', function($param = null){
+    return 'Esto es '. $param;
+});
