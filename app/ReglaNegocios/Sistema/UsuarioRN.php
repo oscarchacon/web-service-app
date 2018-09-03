@@ -9,12 +9,12 @@ class UsuarioRN
 {
     public function getUser($id)
     {
-        $_usuarioAd = new UsuarioAD();
         try{
+            $_usuarioAd = new UsuarioAD();
             $usuario = new Usuario();
             $usuario = $_usuarioAd->getUser($id);
-        }catch($ex){
-            return $ex;
+        }catch(Exception $e){
+            return $e;
         }
     }
 }
