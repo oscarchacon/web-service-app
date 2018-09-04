@@ -4,27 +4,38 @@ namespace WebServiceApp\Modelo\Sistema;
 
 class Usuario
 {
-    private $id;
-    private $name;
+    private $Id;
+    private $Name;
+    private $Descripcion;
 
     public function getId()
     {
-        return $this->id;
+        return $this->Id;
     }
 
     public function setId($id)
     {
-        $this->id = $id;
+        $this->Id = $id;
     }
 
     public function getName()
     {
-        return $this->name;
+        return $this->Name;
     }
 
     public function setName($name)
     {
-        $this->name = $name;
+        $this->Name = $name;
+    }
+
+    public function setDescripcion($Descripcion)
+    {
+        $this->Descripcion = $Descripcion;
+    }
+
+    public function getDescripcion()
+    {
+        return $this->Descripcion;
     }
 
 }
